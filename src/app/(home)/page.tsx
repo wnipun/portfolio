@@ -39,7 +39,7 @@ export default function Home() {
           <Card
             title={"Card Title"}
             description={"Card Description"}
-            image={"/avatar.jpeg"}
+            image={`${basePath}/avatar.jpeg`}
             link={"/"}
           />
         </div>
