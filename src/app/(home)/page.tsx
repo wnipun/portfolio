@@ -2,9 +2,10 @@ import Image from "next/image"
 import Link from "next/link"
 import HomeIcon from "../icons/home"
 import Card from "../components/card"
+import nextConfig from "../../../next.config"
 
 export default function Home() {
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || ""
+  const basePath = nextConfig.basePath || "";
 
   return (
     <div className="flex max-w-2xl container mx-auto gap-[4rem]">
