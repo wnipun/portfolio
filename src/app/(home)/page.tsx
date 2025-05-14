@@ -4,6 +4,8 @@ import HomeIcon from "../icons/home"
 import Card from "../components/card"
 
 export default function Home() {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || ""
+
   return (
     <div className="flex max-w-2xl container mx-auto gap-[4rem]">
       <div className="border-r border-gray-100 h-screen pr-[2rem] pt-[30%]">
@@ -12,7 +14,7 @@ export default function Home() {
       <div className="pt-[4rem]">
         <div>
           <Image
-            src="/avatar.jpeg"
+            src={`${basePath}/avatar.jpeg`}
             width={100}
             height={100}
             alt="Nipun Perera with a dog"
