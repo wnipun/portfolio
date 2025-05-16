@@ -3,8 +3,29 @@ import Link from "next/link"
 import HomeIcon from "../icons/home"
 import Card from "../components/card"
 import nextConfig from "../../../next.config"
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Nipun Perera - Full Stack Developer",
+  description: "Portfolio of Nipun Perera, a full stack developer.",
+  openGraph: {
+    title: "Nipun Perera - Full Stack Developer",
+    description: "Portfolio of Nipun Perera, a full stack developer.",
+    url: "https://nipunperera.com",
+    siteName: "Nipun Perera",
+    images: [
+      {
+        url: "/avatar.jpeg",
+        width: 800,
+        height: 600,
+      },
+    ],
+  },
+}
 
 export default function Home() {
+
+
   const basePath = nextConfig.basePath || "";
 
   return (
@@ -18,7 +39,7 @@ export default function Home() {
             src={`${basePath}/avatar.jpeg`}
             width={100}
             height={100}
-            alt="Nipun Perera with a dog"
+            alt="Nipun Perera"
             className="object-cover w-[100px] h-[100px] rounded-full object-top-right"
           />
         </div>
@@ -27,7 +48,7 @@ export default function Home() {
           <span className="text-primary underline decoration-secondary underline-offset-2">
           passion
           </span>{" "}
-          to write code.
+          for writing code.
         </h1>
         <p className="mt-[1rem]">
           Web Developer with 8+ years of expertise in Laravel, MySQL, Javascript
