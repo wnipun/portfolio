@@ -4,6 +4,7 @@ import HomeIcon from "../icons/home"
 import Card from "../components/card"
 import nextConfig from "../../../next.config"
 import { Metadata } from "next"
+import LinkedInIcon from "../icons/linkedin"
 
 export const metadata: Metadata = {
   title: "Nipun Perera - Full Stack Developer",
@@ -24,14 +25,17 @@ export const metadata: Metadata = {
 }
 
 export default function Home() {
-
-
-  const basePath = nextConfig.basePath || "";
+  const basePath = nextConfig.basePath || ""
 
   return (
     <div className="flex max-w-2xl container mx-auto gap-[4rem]">
-      <div className="border-r border-gray-100 h-screen pr-[2rem] pt-[30%]">
-        <Link href="/" title="Home"><HomeIcon className="text-primary"/></Link>
+      <div className="border-r border-gray-100 h-screen pr-[2rem] pt-[30%] flex gap-[1rem] flex-col">
+        <Link href="/" title="Home">
+          <HomeIcon className="text-primary" />
+        </Link>
+        <Link target="_blank" href="https://www.linkedin.com/in/wnipunperera" title="LinkedIn">
+          <LinkedInIcon className="text-primary" />
+        </Link>
       </div>
       <div className="pt-[4rem]">
         <div>
@@ -46,7 +50,7 @@ export default function Home() {
         <h1 className="text-4xl font-bold mt-[1rem]">
           Full stack developer with a{" "}
           <span className="text-primary underline decoration-secondary underline-offset-2">
-          passion
+            passion
           </span>{" "}
           for writing code.
         </h1>
