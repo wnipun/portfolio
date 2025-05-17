@@ -35,7 +35,7 @@ export default function Home() {
           className="object-cover w-[100px] h-[100px] rounded-full object-top-right"
         />
       </div>
-      <h1 className="text-4xl font-bold mt-[1rem]">
+      <h1 className="text-5xl font-bold mt-[1rem]">
         Full stack developer with a{" "}
         <span className="text-primary underline decoration-secondary underline-offset-2">
           passion
