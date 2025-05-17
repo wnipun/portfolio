@@ -2,6 +2,7 @@ import Image from "next/image"
 import Card from "../components/card"
 import nextConfig from "../../../next.config"
 import { Metadata } from "next"
+import Wysiwyg from "../components/wysiwyg"
 
 export const metadata: Metadata = {
   title: "Nipun Perera - Full Stack Developer",
@@ -42,21 +43,28 @@ export default function Home() {
         </span>{" "}
         for writing code.
       </h1>
-      <p className="mt-[1rem] text-[15px]">
-        Seasoned Full Stack Developer and technical team leader with over 8
-        years of experience delivering high-quality, scalable web solutions
-        across diverse industries. Adept at leading end-to-end development
-        projects, mentoring junior developers, and translating business
-        requirements into robust technical architecture. Expertise spans modern
-        frontend frameworks (React, Vue.js, TypeScript), backend technologies
-        PHP (Laravel), Node.js, API integration, and cloud infrastructure (AWS,
-        Google Cloud). Known for fostering collaborative team environments,
-        driving process improvements through CI/CD automation, and aligning
-        technical delivery with business strategy. Backed by a bachelor&apos;s degree
-        in information and communication technology from Swinburne University
-        and a Professional Year certification from the Australian Computer
-        Society.
-      </p>
+      <Wysiwyg className="mt-[2rem]">
+        <p>
+          I&apos;m a full stack web developer with 8+ years of experience
+          delivering scalable, high-quality web applications across various
+          industries. From frontend frameworks like React, Vue.js, and
+          TypeScript to backend systems with PHP (Laravel) and Node.js, I take
+          pride in turning complex requirements into clean, reliable code.
+        </p>
+
+        <p>
+          I&apos;ve managed end-to-end projects, mentored developers, and
+          improved workflows through CI/CD automation and agile practices.
+          I&apos;m also experienced in cloud infrastructure, primarily AWS and
+          Google Cloud.
+        </p>
+
+        <p>
+          <u>What drives me?</u> Building solutions that not only work well but
+          make a real impact.
+        </p>
+      </Wysiwyg>
+
       <h2 className="font-bold text-xl mt-[2rem]">My Work</h2>
       <div className="grid grid-cols-1 gap-[1rem] mt-[1rem]">
         <Card
