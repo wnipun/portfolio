@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Nipun Perera - Full Stack Developer",
     description: "Portfolio of Nipun Perera, a full stack developer.",
-    url: "https://nipunperera.com",
+    url: "https://nipun.au",
     siteName: "Nipun Perera",
     images: [
       {
@@ -52,7 +52,7 @@ export default function Home() {
         <Card
           title={"Gym Membership Management Portal"}
           description={"Laravel, Vue.js, Typescript, Tailwind, REST API, MySQL"}
-          image={`${basePath}/avatar.jpeg`}
+          image={`${basePath}/ihf-crm/thumbnail.png`}
           link={"/gym-membership-management-portal"}
         />
       </div>
