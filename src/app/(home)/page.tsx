@@ -42,10 +42,20 @@ export default function Home() {
         </span>{" "}
         for writing code.
       </h1>
-      <p className="mt-[1rem]">
-        Web Developer with 8+ years of expertise in Laravel, MySQL, Javascript
-        and Cloud Platforms including Amazon AWS and Google Cloud. Proficient in
-        React, Vue.js, Craft CMS, GraphQL and Git.
+      <p className="mt-[1rem] text-[15px]">
+        Seasoned Full Stack Developer and technical team leader with over 8
+        years of experience delivering high-quality, scalable web solutions
+        across diverse industries. Adept at leading end-to-end development
+        projects, mentoring junior developers, and translating business
+        requirements into robust technical architecture. Expertise spans modern
+        frontend frameworks (React, Vue.js, TypeScript), backend technologies
+        PHP (Laravel), Node.js, API integration, and cloud infrastructure (AWS,
+        Google Cloud). Known for fostering collaborative team environments,
+        driving process improvements through CI/CD automation, and aligning
+        technical delivery with business strategy. Backed by a bachelor&apos;s degree
+        in information and communication technology from Swinburne University
+        and a Professional Year certification from the Australian Computer
+        Society.
       </p>
       <h2 className="font-bold text-xl mt-[2rem]">My Work</h2>
       <div className="grid grid-cols-1 gap-[1rem] mt-[1rem]">
