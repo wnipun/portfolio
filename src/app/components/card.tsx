@@ -16,9 +16,9 @@ export default function Card({ title, description, image, link }: CardProps) {
       </div>
       <div>
         <h3 className="text-xl font-bold">{title}</h3>
-        <p className="text-gray-600">{description}</p>
+        <p className="text-gray-600 text-sm">{description}</p>
+        <div className="mt-[0.5rem]"><Link href={link} className="font-bold text-primary hover:underline">View</Link></div>
       </div>
-      <Link href={link}>View</Link>
     </div>
   );
 }
