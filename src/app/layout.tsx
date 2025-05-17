@@ -28,9 +28,16 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="flex max-w-2xl container mx-auto gap-[4rem]">
+        <div className="flex max-w-4xl container mx-auto gap-[4rem]">
           <Sidebar />
-          <div className="pt-[4rem]">{children}</div>
+          <div className="pt-[4rem]">
+            <div>{children}</div>
+            <div className="py-[2rem]">
+              <p className="text-center text-gray-500">
+                © {new Date().getFullYear()} Nipun Perera
+              </p>
+            </div>
+          </div>
         </div>
       </body>
     </html>
