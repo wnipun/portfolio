@@ -15,6 +15,10 @@
   --color-secondary: #e9f7fe;
 }
 
+@utility container {
+  padding-inline: 2rem;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;

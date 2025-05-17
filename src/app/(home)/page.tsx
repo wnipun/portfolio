@@ -5,6 +5,7 @@ import Card from "../components/card"
 import nextConfig from "../../../next.config"
 import { Metadata } from "next"
 import LinkedInIcon from "../icons/linkedin"
+import Sidebar from "../components/sidebar"
 
 export const metadata: Metadata = {
   title: "Nipun Perera - Full Stack Developer",
@@ -29,14 +30,7 @@ export default function Home() {
 
   return (
     <div className="flex max-w-2xl container mx-auto gap-[4rem]">
-      <div className="border-r border-gray-100 h-screen pr-[2rem] pt-[30%] flex gap-[1rem] flex-col">
-        <Link href="/" title="Home">
-          <HomeIcon className="text-primary" />
-        </Link>
-        <Link target="_blank" href="https://www.linkedin.com/in/wnipunperera" title="LinkedIn">
-          <LinkedInIcon className="text-primary" />
-        </Link>
-      </div>
+      <Sidebar/>
       <div className="pt-[4rem]">
         <div>
           <Image
